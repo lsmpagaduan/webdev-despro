@@ -1,0 +1,89 @@
+body{
+    background: url(img/background-blue1.jpg) no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+
+}
+
+#logo{
+    height: 30px;
+}
+
+.navbar{
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    background-color: black;
+ }
+
+.nav-item{
+    margin-left: 20px;
+}
+
+.text-white:hover{
+    color: gainsboro !important;
+}
+
+
+.regContainer{
+    background-color: white;
+    width: 60%;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 5%;
+    height: 3%;
+}
+
+.titleForm{
+    padding: 10px;
+    background-color: black;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    text-align: center;
+}
+
+#titleFormTxt{
+    /* margin-top: 1%;
+    background: -webkit-linear-gradient(300deg, #93f5ec 20%, #eaa360 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color: white;
+}
+
+#personalInformationTxt{
+    text-align: center;
+    padding: 10px;
+}
+
+.mainForm{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.creditsContainer{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: start;
+    margin-top: 10%;
+}
+
+#logoCredits{
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+#graphicForm{
+    height: 250px;
+    margin-top: 5px;
+}
+
+/* svg */
+.bi{
+    height: 30px !important;
+    width: 30px !important;
+}
+
+.sideElement{
+    background-color: black;
+}
+

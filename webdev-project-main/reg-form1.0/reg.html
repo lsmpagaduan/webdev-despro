@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gambea | Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="style2.css" />
+    <!-- js script -->
+    <script type="module" src="script.js"></script>
+    <!-- icon -->
+    <link rel="shortcut icon" type="x-icon" href="img/logo.png" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body onload="document.personalInformation.firstNameInput.focus();">
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a href="#">
+          <!-- logo in nav bar -->
+          <img id="logo" src="img/logo.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-row" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="text-white nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-white nav-link" href="#sectionAbout">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-white nav-link" href="index2.html">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav bar -->
+    <div class="wrapper">
+      <div class="header">
+        <ul>
+          <li class="active form_1_progessbar">
+            <div>
+              <p>1</p>
+            </div>
+          </li>
+          <li class="form_2_progessbar">
+            <div>
+              <p>2</p>
+            </div>
+          </li>
+          <li class="form_3_progessbar">
+            <div>
+              <p>3</p>
+            </div>
+          </li>
+          <li class="form_4_progessbar">
+            <div>
+              <p>4</p>
+            </div>
+          </li>
+          <li class="form_5_progessbar">
+            <div>
+              <p>5</p>
+            </div>
+          </li>
+          <li class="form_6_progessbar">
+            <div>
+              <p>6</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="form_wrap">
+        <div class="form_1 data_info">
+          <h4>Personal Information</h4>
+
+          <form
+            onsubmit="event.preventDefault(); formValidation1();"
+            id="form1"
+            name="personalInformation"
+          >
+            <div class="form_container">
+              <div class="input_wrap">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" class="input" id="email" />
+              </div>
+              <div class="input_wrap">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" class="input" id="" />
+              </div>
+              <div class="input_wrap">
+                <label for="studentNumber">Student Number</label>
+                <input type="text" name="studentNumber" class="input" id="" />
+              </div>
+              <div class="input_wrap">
+                <select name="gender" id="" class="form-dropdown">
+                  <option selected="" value="Default">Gender</option>
+                  <option value="male">Male</option>
+                  <option value="femal">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="input_wrap">
+                <select name="courses" id="" class="form-dropdown">
+                  <option selected="" value="Default">Courses</option>
+                  <option value="compEng">Computer Engineering</option>
+                  <option value="civilEng">Civil Engineering</option>
+                  <option value="elecEng">Electrical Engineering</option>
+                  <option value="mechEng">Mechanical Engineering</option>
+                </select>
+              </div>
+              <div class="input_wrap">
+                <select name="yearLevel" id="" class="form-dropdown">
+                  <option selected="" value="Default">Year Level</option>
+                  <option value="yearOne">1</option>
+                  <option value="yearTwo">2</option>
+                  <option value="yearThree">3</option>
+                  <option value="yearFour">4</option>
+                  <option value="yearFive">5</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="form_2 data_info" style="display: none">
+          <h4>Contact Information</h4>
+          <form
+            id="form2"
+            name="contactInformation"
+            onsubmit="event.preventDefault(); formValidation2();"
+          >
+            <div class="form_container">
+              <div class="input_wrap">
+                <label for="urEmailInputTitle">UE Email Address</label>
+                <input type="text" name="urEmailInput" class="input" id="" />
+              </div>
+              <div class="input_wrap">
+                <label for="personalEmailInputTitle"
+                  >Personal Email Address</label
+                >
+                <input
+                  type="text"
+                  name="personalEmailInput"
+                  class="input"
+                  id=""
+                />
+              </div>
+
+              <div class="input_wrap">
+                <label for="personalEmailInput">Contact Number</label>
+                <input type="text" name="contactNumber" class="input" id="" />
+              </div>
+              <div class="input_wrap">
+                <label for="homeAddress">Home Address</label>
+                <input type="text" name="homeAddress" class="input" />
+              </div>
+              <div class="input_wrap">
+                <label for="homeAddress">Provincial Address</label>
+                <input type="text" name="provincialAddress" class="input" />
+              </div>
+              <div class="input_wrap">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id=""
+                    name="addressSameStatedAbove"
+                  />
+                  <label class="form-check-label" for="defaultCheck1">
+                    Same as stated above.
+                  </label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="form_3 data_info" style="display: none">
+          <h4>Social Media</h4>
+          <form>
+            <div class="form_container">
+              <div class="input_wrap">
+                <label for="company">Facebook Link</label>
+                <input type="text" name="fbLink" class="input" id="" />
+              </div>
+              <div class="input_wrap">
+                <label for="igHandler">Instagram Handler (@juanDelacruz)</label>
+                <input type="text" name="igHandler" class="input" id="" />
+              </div>
+              <div class="input_wrap">
+                <label
+                  for="twitterh
+                Handler"
+                  >Twitter Handler (@juanDelacruz)</label
+                >
+                <input type="text" name="igHandler" class="input" id="" />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="form_4 data_info" style="display: none">
+          <h4>Emergency Contacts</h4>
+          <form>
+            <div class="form_container">
+              <div class="input_wrap">
+                <label for="company">Name</label>
+                <input type="text" name="emergencyName" class="input" id="" />
+              </div>
+              <div class="input_wrap">
+                <select
+                  name="emergencyRelationship"
+                  id=""
+                  class="form-dropdown"
+                >
+                  <option selected="" value="Default">Relationship</option>
+                  <option value="father">Father</option>
+                  <option value="mother">Mother</option>
+                  <option value="guardian">Guardian</option>
+                </select>
+              </div>
+              <div class="input_wrap">
+                <label for="contactNumberEmeegency">Contact Number</label>
+                <input
+                  type="text"
+                  name="emergencyContactNumber"
+                  class="input"
+                  id=""
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="form_5 data_info" style="display: none">
+          <h4>Membership Type</h4>
+          <form>
+            <div class="form_container">
+              <div class="input_wrap">
+                <div class="form-group-contact">
+                  <div class="input-wrap">
+                    <select
+                      name="membershipTypeDropdown"
+                      id=""
+                      class="form-dropdown"
+                    >
+                      <option selected="" value="Default">
+                        Membership Type
+                      </option>
+                      <option value="new">New</option>
+                      <option value="renewal">Renewal</option>
+                      <option value="honorary">Honorary</option>
+                    </select>
+                  </div>
+
+                  <div class="form-wrapper">
+                    <label for="myfile">Proof of payment:</label>
+                    <input type="file" id="myfile" name="myfile" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="form_6 data_info" style="display: none">
+          <h4>Terms and Condition</h4>
+          <form>
+            <div class="form_container">
+              <div class="input_wrap">
+                <p>Welcome to Gambea!</p>
+                <p>
+                  These terms and conditions outline the rules and regulations
+                  for the use of Gambia's Website, located at
+                  https://andrelacra.github.io/webdev-project/.
+                </p>
+                <p>
+                  By accessing this website we assume you accept these terms and
+                  conditions. Do not continue to use Gambea if you do not agree
+                  to take all of the terms and conditions stated on this page.
+                </p>
+                <p>
+                  The following terminology applies to these Terms and
+                  Conditions, Privacy Statement and Disclaimer Notice, and all
+                  Agreements: "Client", "You" and "Your" refers to you, the
+                  person who logs on to this website and is compliant with the
+                  Company’s terms and conditions. "The Company", "Ourselves",
+                  "We", "Our" and "Us", refers to our Company. "Party",
+                  "Parties", or "Us", refers to both the Client and ourselves.
+                  All terms refer to the offer, acceptance, and consideration of
+                  payment necessary to undertake the process of our assistance
+                  to the Client in the most appropriate manner for the express
+                  purpose of meeting the Client’s needs in respect of the
+                  provision of the Company’s stated services, in accordance with
+                  and subject to, prevailing law of Netherlands. Any use of the
+                  above terminology or other words in the singular, plural,
+                  capitalization, and/or he/she or they, are taken as
+                  interchangeable and therefore as referring to the same.
+                </p>
+              </div>
+              <div class="input_wrap">
+                <div class="form-wrapper">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id=""
+                      name="termsAgreementCheck"
+                    />
+                    <label class="form-check-label" for="defaultCheck1">
+                      I accept.
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="btns_wrap">
+        <div class="common_btns form_1_btns">
+          <button type="button" class="btn_next">
+            Next
+            <span class="icon"
+              ><ion-icon name="arrow-forward-sharp"></ion-icon
+            ></span>
+          </button>
+        </div>
+        <div class="common_btns form_2_btns" style="display: none">
+          <button type="button" class="btn_back">
+            <span class="icon"
+              ><ion-icon name="arrow-back-sharp"></ion-icon></span
+            >Back
+          </button>
+          <button type="button" class="btn_next">
+            Next
+            <span class="icon"
+              ><ion-icon name="arrow-forward-sharp"></ion-icon
+            ></span>
+          </button>
+        </div>
+        <div class="common_btns form_3_btns" style="display: none">
+          <button type="button" class="btn_back">
+            <span class="icon"
+              ><ion-icon name="arrow-back-sharp"></ion-icon></span
+            >Back
+          </button>
+          <button type="button" class="btn_next">
+            Next
+            <span class="icon"
+              ><ion-icon name="arrow-forward-sharp"></ion-icon
+            ></span>
+          </button>
+        </div>
+        <div class="common_btns form_4_btns" style="display: none">
+          <button type="button" class="btn_back">
+            <span class="icon"
+              ><ion-icon name="arrow-back-sharp"></ion-icon></span
+            >Back
+          </button>
+          <button type="button" class="btn_next">
+            Next
+            <span class="icon"
+              ><ion-icon name="arrow-forward-sharp"></ion-icon
+            ></span>
+          </button>
+        </div>
+        <div class="common_btns form_5_btns" style="display: none">
+          <button type="button" class="btn_back">
+            <span class="icon"
+              ><ion-icon name="arrow-back-sharp"></ion-icon></span
+            >Back
+          </button>
+          <button type="button" class="btn_next">
+            Next
+            <span class="icon"
+              ><ion-icon name="arrow-forward-sharp"></ion-icon
+            ></span>
+          </button>
+        </div>
+        <div class="common_btns form_6_btns" style="display: none">
+          <button type="button" class="btn_back">
+            <span class="icon"
+              ><ion-icon name="arrow-back-sharp"></ion-icon></span
+            >Back
+          </button>
+          <button type="button" class="btn_done">Done</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal_wrapper">
+      <div class="shadow"></div>
+      <div class="success_wrap">
+        <span class="modal_icon"
+          ><ion-icon name="checkmark-sharp"></ion-icon
+        ></span>
+        <p>You have successfully completed the registration process!</p>
+      </div>
+    </div>
+
+    <div class="creditsContainer">
+      <div class="row">
+        <div class="col">
+          <div class="row">
+            <div class="col">
+              <img id="logoCredits" src="img/logo.png" alt="" />
+            </div>
+          </div>
+          <p>An organization of the University of The East.</p>
+          <p id="copyrightsCredits">© 2022 Gambea. All rights reserved.</p>
+        </div>
+        <div class="col">
+          <p>Developers:</p>
+          <p>Dylann Esteban | Shaira Pagaduan | Andre Lacra</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="scripts.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,277 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(img/bg3.png) no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  font-size: 13px;
+  margin: 0;
+
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: arial;
+  color: #333;
+  font-size: 14px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+:focus {
+  outline: none;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.inner {
+  padding: 20px;
+  background: #fff;
+  max-width: 850px;
+  margin: auto;
+  display: flex;
+  box-shadow: 20px 20px #00000085;
+  border-radius: 25px;
+}
+.inner .image-holder {
+  width: 50%;
+}
+.inner form{
+  width: 50%;
+  padding-top: 36px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+.inner h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.form-group {
+  display: flex;
+  margin-top: 20px;
+}
+
+/* contact information */
+.form-group-contact { 
+  margin-top: 20px;
+}
+
+.form-group input {
+  width: 50%;
+}
+.form-group input:first-child {
+  margin-right: 25px;
+}
+
+.form-wrapper {
+  position: relative;
+}
+.form-wrapper i {
+  position: absolute;
+  bottom: 9px;
+  right: 0;
+}
+
+.form-control {
+  border: 1px solid #333;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  display: block;
+  width: 90%;
+  height: 40px;
+  padding: 0;
+  margin-bottom: 18px;
+}
+
+.form-dropdown{
+  border: 1px solid #333;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  display: block;
+  width: 90%;
+  height: 40px;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.form-control::-webkit-input-placeholder {
+  font-size: 14px;
+  color: gray;
+  font-family: arial;
+}
+
+select {
+  font-size: 14px;
+  font-family: arial;
+  cursor: pointer;
+  padding-left: 20px;
+  color: gray;
+}
+select option[value=""][disabled] {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  /* .inner {
+    display: block;
+  } */
+  .inner .image-holder {
+    width: 100%;
+  }
+  .inner form {
+    width: 100%;
+    padding: 40px 0 30px;
+  }
+
+  button {
+    margin-top: 60px;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#regFormTitle{
+  text-align: center;
+  margin: auto;
+}
+
+#regFormHeader{
+  margin-top: 20px;
+}
+
+.navbar{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-item{
+  margin-left: 20px;
+}
+
+.text-white:hover{
+  color: gainsboro !important;
+  color: opacity 0.5s;
+}
+
+#logo{
+  height: 30px;
+}
+
+
+.creditsContainer{
+  --bs-bg-opacity: 1;
+  background-color: black;
+  color: white;
+  padding: 30px;
+  text-align: start;
+  margin-top: 10%;
+}
+
+#logoCredits{
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+
+.gambea-intro-container{
+  margin: auto;
+  text-align: center;
+  margin-top: 30%;
+}
+
+#gambeaIntroLogo{
+  height: 100px;
+}
+
+.separateLine{
+  background-color: black;
+  width: 400px;
+  height: 3px;
+}
+
+#gambeaDescription{
+  width: 260px;
+  margin-top: 5px;
+  text-align: center;
+  margin: auto;
+}
+
+#next1, #next2, #next3, #next4, #next5, #next6{
+  border: none;
+  width: 134px;
+  height: 41px;
+  margin: auto;
+  margin-bottom: 2px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  font-size: 15px;
+  color: #fff;
+}
+
+#btnRegForm:hover {
+  opacity: 0.9; 
+  transition: opacity 0.5s;
+}
+
+#myfile{
+  margin-bottom: 10%;
+}
+
+#wrapper2{
+  left: 450px;
+}
